@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.conteyner {
+  background-color: black;
+  position: relative;
+  height: 200vh;
+  box-shadow: 0px 0px 50px 13px rgba(235, 233, 209, 0.623) inset, 0px 0px 1000px 158px rgba(231, 230, 220, 0.3) inset, 0px 0px 2000px 700px rgba(245, 179, 174, 0.1) inset;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  box-shadow: 0px 0px 50px 1px red, 0px 0px 5px 1px red inset;
+  animation: 4s sun-anim infinite linear;
+}
+
+.mercury-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 170px;
+  width: 170px;
+  padding: 10px;
+  animation: 20s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.mercury-orbit .mercury {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(to top left, #828282, #BEBEBE);
+}
+
+.venus-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 290px;
+  width: 290px;
+  padding: 23px;
+  animation: 30s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.venus-orbit .venus {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #F9A602, #FFF5CC);
+}
+
+.erth-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 415px;
+  width: 415px;
+  padding: 57px;
+  animation: 20s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.erth-orbit .erth {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #2B32B2, #1488CC);
+  animation: 4s orbit infinite linear;
+}
+.erth-orbit .erth .moon-orbit {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75px;
+  width: 75px;
+  animation: 5s orbit infinite linear;
+  border-radius: 50%;
+  padding: 9px;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.erth-orbit .erth .moon-orbit .moon {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(97, 97, 99);
+  animation: 4s orbit infinite linear;
+}
+
+.mars-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 565px;
+  width: 565px;
+  padding: 55px;
+  animation: 35s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.mars-orbit .mars {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #922c25, #ff4800);
+}
+
+.jupiter-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 800px;
+  width: 800px;
+  padding: 75px;
+  animation: 60s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.jupiter-orbit .jupiter {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #4B79A1, #283E51);
+}
+
+.saturn-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1000px;
+  width: 1000px;
+  padding: 120px;
+  animation: 43s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.saturn-orbit .saturn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: 8s orbit-p infinite linear;
+  box-shadow: 0px 0px 1px 13px rgba(0, 0, 0, 0.7), 0px 0px 1px 23px rgba(85, 60, 28, 0.788);
+  background: linear-gradient(to bottom right, #E9724C, #8E2800);
+}
+
+.uranus-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1200px;
+  width: 1200px;
+  padding: 150px;
+  animation: 80s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.uranus-orbit .uranus {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #00A8C5, #FFFF7E);
+}
+
+.neptun-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1400px;
+  width: 1400px;
+  padding: 175px;
+  animation: 130s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.neptun-orbit .neptun {
+  position: relative;
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #1A2980, #26D0CE);
+}
+
+.pluto-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1600px;
+  width: 1600px;
+  padding: 223px;
+  animation: 230s orbit infinite linear;
+  border-radius: 50%;
+  border-top: 1px solid transparent;
+  border-left: 1px solid whitesmoke;
+}
+.pluto-orbit .pluto {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #828282;
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes orbit-p {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes sun-anim {
+  0% {
+    box-shadow: 0px 0px 50px 1px red, 0px 0px 5px 1px red inset;
+  }
+  15% {
+    box-shadow: 0px 0px 80px 8px red, 0px 0px 15px 4px red inset;
+  }
+  50% {
+    box-shadow: 0px 0px 35px 1px red, 0px 0px 4px 1px red inset;
+  }
+  60% {
+    box-shadow: 0px 0px 55px 4px red, 0px 0px 8px 2px red inset;
+  }
+  100% {
+    box-shadow: 0px 0px 50px 1px red, 0px 0px 5px 1px red inset;
+  }
+}/*# sourceMappingURL=style.css.map */
